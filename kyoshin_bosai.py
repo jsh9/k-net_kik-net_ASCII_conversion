@@ -2,13 +2,14 @@
 """
 Created on Sat May 24 15:26:24 2014
 
-@author: Jian Shi
+Copyright (c) 2012-2014, Jian Shi
 """
 
 def convert_single_event(parent_folder,event_name,station_type):
-    '''Convert from Kyoshin ASCII format to 2-column format (for a single event).
-
-    Note: PARENT_FOLDER must not include EVENT_NAME.'''
+    '''
+    Convert from Kyoshin ASCII format to 2-column format (for a single event).
+    [Note] PARENT_FOLDER must not include EVENT_NAME.
+    '''
 
     import os
 
@@ -290,14 +291,16 @@ def convert_single_event(parent_folder,event_name,station_type):
         print '                ', 'Basic Info', '-- Done.'
 
 def convert_multiple_events(parent_folder):
-    '''Convert from Kyoshin ASCII format to 2-column format.
+    '''
+    Convert from Kyoshin ASCII format to 2-column format.
 
     PARENT_FOLDER contains many subfolders that have Kik-Net or K-Net raw ASCII
     files. The program only looks at subfolders whose folder name's length has
     sixteen characters, i.e., IWTH041103111446.
 
     Station type (i.e., Kik or K) is determined automatically by counting the
-    number of files within the subfolder. If 8 files, Kik; if 5 files, K.'''
+    number of files within the subfolder. If 8 files, Kik; if 5 files, K.
+    '''
 
     import os
    
