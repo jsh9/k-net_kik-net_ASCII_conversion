@@ -84,4 +84,4 @@ Just Python 2.7.
 To use this module in Python 3.0+, the `print` commands need to be rewritten.
 
 ## License
-Copyright (c) 2014, Jian Shi. See LICENSE.txt file for details.
+Copyright (c) 2012-2014, Jian Shi. See LICENSE.txt file for details.
